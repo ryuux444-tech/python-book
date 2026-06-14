@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Way to Python – Complete Python Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            padding: 80px 0 50px;
+            text-align: center;
+        }
+
+        .python-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fbbf24, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #94a3b8;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-size: 14px;
+            margin: 0 8px;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin: 32px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            color: #f1f5f9;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 28px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-4px);
+        }
+
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #fbbf24;
+        }
+
+        .card p {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Topics */
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .topic-tag {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* TOC Grid */
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 10px;
+            list-style: none;
+        }
+
+        .toc-grid li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .toc-grid a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .toc-grid a:hover {
+            color: #fbbf24;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 0;
+            text-align: center;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #10b981;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            .btn {
+                display: block;
+                margin: 12px auto;
+                width: 220px;
+                text-align: center;
+            }
+            .badge {
+                display: inline-block;
+                margin: 6px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="python-icon">🐍</div>
+            <h1>NEXT WAY TO PYTHON</h1>
+            <div class="subtitle">A Complete Beginner's Guide to Python Programming</div>
+            <div>
+                <span class="badge">📄 500+ pages</span>
+                <span class="badge">📚 22 parts</span>
+                <span class="badge">📖 100+ chapters</span>
+            </div>
+            <div class="buttons">
+                <a href="read.html" class="btn btn-primary">📖 Read Online</a>
+                <a href="NextPython.pdf" class="btn btn-secondary">📥 Download PDF</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🐍</div>
+                    <h3>Beginner Friendly</h3>
+                    <p>No prior experience needed. Start from absolute zero.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Learn by Doing</h3>
+                    <p>Hundreds of code examples and practice challenges.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Beginner to Pro</h3>
+                    <p>From basics to full-stack web development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📖 What You'll Learn</h2>
+            <div class="topics">
+                <span class="topic-tag"># Variables & Data Types</span>
+                <span class="topic-tag"># Functions</span>
+                <span class="topic-tag"># OOP</span>
+                <span class="topic-tag"># File Handling</span>
+                <span class="topic-tag"># Error Handling</span>
+                <span class="topic-tag"># Modules & Packages</span>
+                <span class="topic-tag"># Data Structures</span>
+                <span class="topic-tag"># Algorithms</span>
+                <span class="topic-tag"># Databases (SQLite)</span>
+                <span class="topic-tag"># Flask & FastAPI</span>
+                <span class="topic-tag"># REST APIs</span>
+                <span class="topic-tag"># Full-Stack Apps</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📚 Table of Contents</h2>
+            <ul class="toc-grid">
+                <li><a href="#">Part 1: Getting Started with Python</a></li>
+                <li><a href="#">Part 2: Variables and Data Types</a></li>
+                <li><a href="#">Part 3: Input, Output, and Operators</a></li>
+                <li><a href="#">Part 4: Control Flow</a></li>
+                <li><a href="#">Part 5: Loops</a></li>
+                <li><a href="#">Part 6: Functions</a></li>
+                <li><a href="#">Part 7: Strings</a></li>
+                <li><a href="#">Part 8: Lists</a></li>
+                <li><a href="#">Part 9: Tuples</a></li>
+                <li><a href="#">Part 10: Sets</a></li>
+                <li><a href="#">Part 11: Dictionaries</a></li>
+                <li><a href="#">Part 12: Modules and Packages</a></li>
+                <li><a href="#">Part 13: File Handling</a></li>
+                <li><a href="#">Part 14: Error Handling</a></li>
+                <li><a href="#">Part 15: Object-Oriented Programming</a></li>
+                <li><a href="#">Part 16: Advanced OOP</a></li>
+                <li><a href="#">Part 17: Advanced Python</a></li>
+                <li><a href="#">Part 18: Functional Programming</a></li>
+                <li><a href="#">Part 19: Data Structures & Algorithms</a></li>
+                <li><a href="#">Part 20: Databases</a></li>
+                <li><a href="#">Part 21: Backend Development</a></li>
+                <li><a href="#">Part 22: Super App Development</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">✍️ About the Author</h2>
+            <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 48px; margin-bottom: 16px;">👨‍💻</p>
+                <p style="font-size: 18px; font-weight: 600; color: #fbbf24;">RYUU</p>
+                <p style="color: #94a3b8; margin-top: 12px;">A young developer who started this journey because "good programming books are very few." This is the second book — a complete, beginner-friendly guide to Python.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📄 License</h2>
+            <div class="card" style="text-align: center;">
+                <p>This work is licensed under <strong>Creative Commons BY-SA 4.0</strong></p>
+                <p style="font-size: 13px; margin-top: 12px;">You are free to share, copy, and adapt this book for any purpose, even commercially, as long as you give appropriate credit and share under the same license.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 RYUU · Next Way to Python</p>
+            <p><a href="https://github.com/ryuux444-tech" target="_blank">GitHub</a> · <a href="https://ryuux444-tech.github.io/swift-book/">Go Swift with the Flow</a></p>
+        </div>
+    </div>
+</body>
+</html>
